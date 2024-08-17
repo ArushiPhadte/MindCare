@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:Ivory;">
+
+<h1 style="font-size:50px; color: Maroon;">Fall Detector</h1>
+<br>
+<p1> Here you can monitor your patient's well being using MindCare's camera feed. Press the button to check in for 10 seconds.<p1>
+
+<button onclick="callPythonFunction()">Check The Camera</button>
+
+<script>
+	function callPythonFunction() {
+		fetch('/call-function')
+			.then(response => response.text())
+			.then(data => alert(data));
+	}
+</script>
+
+
+</body>
+</html>
