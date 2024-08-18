@@ -6,32 +6,10 @@
 <br>
 <h4>This is a health check-in for your dementia patient that can be completed once per day to track their health and progression. Please ask these question and record their answers in either yes or no.
 <br>
+<br>
+<br>
+<br>
 
-<!--
-<button onclick="callPythonFunction3()">Start the Quiz 
-
-<script>
-        function callPythonFunction3() {
-                fetch('/call-function3')
-                        .then(response => response.text())
-                        .then(data => alert(data));
-        }
-
-</script>
-
-<button>
-
-<p>Select all of your symptoms from today:</p>
-<form action="/action_page.php" method = "POST">
-  <input type="checkbox" id="S1" name="S1" value="Fatigue">
-  <label for="S1">Fatigue</label><br>
-  <input type="checkbox" id="Low Energy" name="S2" value="Low Energy">
-  <label for="S2">Low Energy</label><br>
-  <input type="checkbox" id="Decreased Appetite" name="S2" value="Decreased Appetite">
-  <label for="S3">Decreased Appetite</label><br><br>
-  <input type="submit" value="Submit">
-</form>
--->
   <form name="F1" action="/quiz2" method="POST">
                 <label>Do you have decreased appetite?</label><br>
                 <input type="text" name="S1" required><br><br>
@@ -48,12 +26,6 @@
                 <button type="submit">Submit</button>
 </form>
 
-<form action="welcome.php" method="POST">
-Name: <input type="text" name="name"><br>
-E-Mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
 	
- 
 </body>
 </html>
