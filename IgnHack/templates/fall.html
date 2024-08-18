@@ -4,7 +4,7 @@
 
 <h1 style="font-size:50px; color: Maroon;">Fall Detector</h1>
 <br>
-<p1> Here you can monitor your patient's well being using MindCare's camera feed. Press the button to check in for 10 seconds.<p1>
+<p1> Here you can monitor your patient's well being using MindCare's camera feed. Press the first button to turn the camera on. Use the second button to turn the camera off.<p1>
 
 <button onclick="callPythonFunction()">Check The Camera</button>
 
@@ -14,6 +14,17 @@
 			.then(response => response.text())
 			.then(data => alert(data));
 	}
+</script>
+<br>
+<br>
+<button onclick="callPythonFunction2()">Exit the Feed</button>
+
+<script>
+        function callPythonFunction2() {
+                fetch('/call-function2')
+                        .then(response => response.text())
+                        .then(data => alert(data));
+        }
 </script>
 
 
